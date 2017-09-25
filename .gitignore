@@ -1,0 +1,7 @@
+cache
+public/
+!public/index.php
+.log
+.DS_Store
+node_modules
+vendor

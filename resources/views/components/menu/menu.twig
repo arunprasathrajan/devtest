@@ -1,0 +1,9 @@
+<nav class="menu {{ modifiers }}">
+  <ul class="menu__list">
+    {% for item in items %}
+      <li class="menu__item">
+        <a class="menu__anchor" href="{{ item.href }}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

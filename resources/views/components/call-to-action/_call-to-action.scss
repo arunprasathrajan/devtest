@@ -1,0 +1,30 @@
+.call-to-action {
+  background-color: $brand-secondary;
+  color: $color-white;
+  padding: $spacing-vertical-lg $spacing-horizontal;
+  text-align: center;
+
+  &__text {
+    font-family: $font-family-sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: $spacing-vertical-sm;
+    text-transform: uppercase;
+
+    @include susy-breakpoint(map-get($bp, 'sm')) {
+      display: inline-block;
+      font-size: 2.5em;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+
+  &__button {
+    @include susy-breakpoint(map-get($bp, 'sm')) {
+      display: inline-block;
+      margin-left: $spacing-horizontal-lg;
+      vertical-align: middle;
+    }
+  }
+}

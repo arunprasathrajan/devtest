@@ -1,0 +1,20 @@
+<div class="cardmasonry">
+
+  <div class='cardmasonry__cards_container'>
+
+  	{% for card in cards %}
+
+        <div class='cardmasonry__card_holder'>
+	  		<div class='cardmasonry__image' style="background-image: url('{{card.image}}');">
+		  		<span class='cardmasonry__title'>{{card.title}}</span>
+	  		</div>
+	  		<div class='cardmasonry__content'>{{card.content}}</div>
+	  		<span class='cardmasonry__call_to_action'>{{card.button_text}}</span>
+	  	</div>
+
+    {% endfor %}
+
+  </div>
+
+
+</div>

@@ -1,0 +1,29 @@
+.header {
+  background-color: $color-coal;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  &__logo {
+    float: left;
+    padding: $spacing-vertical ($spacing-horizontal * 1.5);
+  }
+
+  &__menu {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__secondary-menu {
+    float: right;
+  }
+
+  &__support {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

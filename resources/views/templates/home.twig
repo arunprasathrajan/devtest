@@ -1,0 +1,18 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+  <section>
+    {% include 'components/hero/hero.twig' with hero %}
+  </section>
+
+  <section>
+    {% include 'components/call-to-action/call-to-action.twig' with callToAction %}
+  </section>
+
+  <section>
+    {# TODO: Add 3x2 grid of place cards #}
+
+    {% include 'components/cardmasonry/cardmasonry.twig' with cardmasonry %}
+
+  </section>
+{% endblock %}

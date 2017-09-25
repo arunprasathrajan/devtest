@@ -1,0 +1,21 @@
+.button {
+  background: transparent;
+  border: .125rem solid $color-white;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-size: .7em;
+  font-weight: 700;
+  padding: $spacing-vertical $spacing-horizontal-lg;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border 200ms ease, background 200ms ease, color 200ms ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}

@@ -1,0 +1,38 @@
+<div class="header" role="banner">
+  <div class="header__logo">
+    {% include 'components/logo/logo.twig' %}
+  </div>
+
+  <div class="header__menu">
+    {% include 'components/menu/menu.twig' with {
+      items: [
+        {
+          label: 'About',
+          href: '#'
+        },
+        {
+          label: 'Places',
+          href: '/places'
+        },
+        {
+          label: 'Contact',
+          href: '#'
+        }
+      ]
+    } %}
+  </div>
+
+  <div class="header__secondary-menu">
+    <div class="header__support">
+      {% include 'components/menu/menu.twig' with {
+        modifiers: 'menu--primary menu--padding',
+        items: [
+          {
+            label: 'Suggest a place',
+            href: '#'
+          }
+        ]
+      } %}
+    </div>
+  </div>
+</div>

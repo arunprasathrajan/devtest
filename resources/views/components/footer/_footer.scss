@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-black;
+  color: $color-grey;
+  padding: $spacing-vertical-lg 0;
+
+  &__container {
+    @include container($container-max-width);
+
+    padding: 0 $spacing-horizontal;
+  }
+
+  &__copyright {
+    @include susy-breakpoint(map-get($bp, 'md')) {
+      clear: both;
+    }
+  }
+}

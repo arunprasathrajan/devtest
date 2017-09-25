@@ -1,0 +1,165 @@
+// Variables
+//
+// Variable format should follow the $[element]-[property]-[orientation]-[size] order.
+
+
+// Table of contents
+//
+// Global
+// -- Colors
+// -- Borders
+// -- Border radius
+// -- Breakpoints
+// -- Fonts
+// -- Spacing
+// -- Transitions
+// Element
+// -- Body
+// -- Headings
+// -- Inputs
+// -- Labels
+// -- Links
+// -- Tables
+
+
+// Colors
+// ==================================================
+
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-coal: #111 !default;
+$color-off-white: #f6f6f6 !default;
+$color-grey: #777 !default;
+$color-red: #dc4a39 !default;
+$color-blue: #171739 !default;
+$color-gold: #cfa544 !default;
+
+$brand-primary: $color-red !default;
+$brand-secondary: $color-blue !default;
+
+// Borders
+// ==================================================
+
+$border-color: $color-grey !default;
+$border-style: solid !default;
+
+$border-width: .1rem !default;
+$border-width-sm: $border-width / 2 !default;
+$border-width-lg: $border-width * 2 !default;
+
+$border: $border-style $border-width $border-color !default;
+
+
+// Border radius
+// ==================================================
+
+$border-radius: .3rem !default;
+
+
+// Breakpoints
+// ==================================================
+
+$bp: (
+  xs: 0,
+  sm: 544 / 16 * 1em,
+  md: 768 / 16 * 1em,
+  lg: 992 / 16 * 1em,
+  xl: 1200 / 16 * 1em
+) !default;
+
+
+// Fonts
+// ==================================================
+
+$font-family-cursive: cursive !default;
+$font-family-monospace: monospace !default;
+$font-family-sans-serif: 'Avenir Next', sans-serif !default;
+$font-family-serif: 'Libre Baskerville', serif !default;
+
+$font-family: $font-family-sans-serif !default;
+
+$line-height: 1.8 !default;
+$font-size: 1.25em !default;
+$font-size-xs: .875em !default;
+$font-size-sm: 1em !default;
+$font-size-lg: 1.5em !default;
+
+$selection-color: $brand-primary !default;
+
+
+// Spacing
+// ==================================================
+
+$spacing-horizontal: 1em !default;
+$spacing-horizontal-lg: $spacing-horizontal * 2 !default;
+$spacing-horizontal-sm: $spacing-horizontal / 2 !default;
+$spacing-horizontal-xl: $spacing-horizontal * 4 !default;
+$spacing-horizontal-xs: $spacing-horizontal / 4 !default;
+
+$spacing-horizontal-fluid: 10% !default;
+$spacing-horizontal-fluid-lg: $spacing-horizontal-fluid * 1.5 !default;
+$spacing-horizontal-fluid-sm: $spacing-horizontal-fluid / 1.5 !default;
+
+$spacing-horizontal-root: 5vw !default;
+
+$spacing-vertical: 1em !default;
+$spacing-vertical-lg: $spacing-vertical * 2 !default;
+$spacing-vertical-sm: $spacing-vertical / 2 !default;
+$spacing-vertical-xl: $spacing-vertical * 4 !default;
+$spacing-vertical-xs: $spacing-vertical / 4 !default;
+
+$spacing-vertical-fluid: 10% !default;
+$spacing-vertical-fluid-lg: $spacing-vertical-fluid * 1.5 !default;
+$spacing-vertical-fluid-sm: $spacing-vertical-fluid / 1.5 !default;
+
+$spacing-vertical-root: 5vw !default;
+
+
+// Transitions
+// ==================================================
+
+$transition-duration: 200ms !default;
+$transition-timing: ease !default;
+
+
+// Body
+// ==================================================
+
+$body-bg: $color-white !default;
+$body-color: $color-black !default;
+
+
+// Body
+// ==================================================
+
+$container-padding-horizontal: $spacing-horizontal;
+$container-padding: 0 $container-padding-horizontal;
+$container-max-width: 1460 / 20 * 1em;
+
+
+// Headings
+// ==================================================
+
+$h1-font-size: 3em !default;
+$h2-font-size: 2.25em !default;
+$h3-font-size: 1.5em !default;
+$h4-font-size: 1em !default;
+$h5-font-size: .9em !default;
+$h6-font-size: .75em !default;
+
+$heading-color: $color-black !default;
+$heading-font-family: $font-family-sans-serif !default;
+$heading-font-weight: 600 !default;
+$heading-line-height: 1.1 !default;
+
+
+// Links
+// ==================================================
+
+$link-color: $brand-primary !default;
+$link-active-color: lighten($link-color, 15%) !default;
+$link-focus-color: lighten($link-color, 15%) !default;
+$link-hover-color: lighten($link-color, 15%) !default;
+
+$link-decoration: underline !default;
+$link-hover-decoration: inherit !default;
